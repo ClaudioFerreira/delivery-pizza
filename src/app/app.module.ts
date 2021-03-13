@@ -7,6 +7,7 @@ import { NavHeaderComponent } from './components/nav-header/nav-header.component
 import { NavFooterComponent } from './components/nav-footer/nav-footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LoginComponent } from './pages/login/login.component';
     NavHeaderComponent,
     NavFooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
