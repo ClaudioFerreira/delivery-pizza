@@ -1,23 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-  <a class="navbar-brand" href="#">Navbar com texto</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar"
-    aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="textoNavbar">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Destaques</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Preços</a>
-      </li>
-    </ul>
-    <span class="navbar-text">
-      Texto navbar com um elemento inline
-    </span>
-  </div>
-</nav>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Nome da companhia</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" [routerLink]="['/']" [routerLinkActive]="['active']">Inicio</a>
+    <a class="p-2 text-dark" [routerLink]="['/cardapio']" [routerLinkActive]="['active']">Cardapio</a>
+    <a class="p-2 text-dark" [routerLink]="['/contato']" [routerLinkActive]="['active']">Contato</a>
+    <!-- <a class="p-2 text-dark" [routerLink]="['#']" [routerLinkActive]="['active']">Preços</a> -->
+  </nav>
+  <a class="btn btn-outline-success mr-2" [routerLink]="['/entrar']" [routerLinkActive]="['active']">Entrar</a>
+  <a class="btn btn-outline-primary" [routerLink]="['/cadastro']" [routerLinkActive]="['active']">Cadastrar</a>
+</div>
