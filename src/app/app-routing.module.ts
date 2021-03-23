@@ -1,3 +1,4 @@
+import { UserComponent } from './pages/user/user.component';
 import { StoreComponent } from './pages/store/store.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'entrar', component: LoginComponent },
   { path: 'cadastro', component: RegisterComponent },
   { path: 'cardapio', component: StoreComponent },
+  { path: 'perfil', component: UserComponent },
 ];
 
 @NgModule({
